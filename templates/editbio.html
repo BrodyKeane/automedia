@@ -1,0 +1,9 @@
+<h1>Editing {{.Name}}</h1>
+<form action="/savebio/{{.Name}}" method="POST">
+  <div>
+    <textarea name="bio" rows = "4" cols = "20">{{printf "%s" .Bio}}</textarea>
+  </div>
+  <div>
+    <input type="submit" value="Save">
+  </div>
+</form>
